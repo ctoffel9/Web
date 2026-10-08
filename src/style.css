@@ -377,19 +377,19 @@ body.modal-open {
   will-change: transform, opacity;
 }
 
-/* Canvas Ripple Aura (Gelombang Ungu dari Dalam ke Luar) */
+/* Canvas Ripple Aura (Gelombang Ungu dari Dalam ke Luar - Terkunci Konsentris di Tengah Avatar) */
 .ripple-aura-canvas {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, calc(-50% + var(--parallax-aura-y, 0px)));
+  transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 1;
-  will-change: transform;
 }
 
 /* ==========================================================================
    ORBIT SYSTEM & REVOLVING 3D PLANETS (ITCH.IO SHOWCASE)
+   Terkunci secara konsentris pada avatar agar trajektori orbit tidak bergeser saat di-scroll
    ========================================================================== */
 
 .hero-orbit-system {
@@ -399,8 +399,6 @@ body.modal-open {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  transform: translate3d(0, var(--parallax-orbit-y, 0px), 0);
-  will-change: transform;
 }
 
 .hero-orbit-back {

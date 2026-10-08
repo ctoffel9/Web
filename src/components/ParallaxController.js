@@ -113,18 +113,9 @@ export class ParallaxController {
       this.heroStage.style.setProperty('--parallax-stage-opacity', stageOpacity);
     }
 
-    // 4. Ripple Aura Canvas (differential vertical drift)
-    if (this.rippleCanvas) {
-      const auraY = (y * 0.16 * factor).toFixed(2);
-      this.rippleCanvas.style.setProperty('--parallax-aura-y', `${auraY}px`);
-    }
-
-    // 5. Orbit System & Revolving 3D Planets (differential depth)
-    const orbitLayers = document.querySelectorAll('.hero-orbit-system');
-    if (orbitLayers.length > 0) {
-      const orbitY = (y * 0.12 * factor).toFixed(2);
-      orbitLayers.forEach(layer => layer.style.setProperty('--parallax-orbit-y', `${orbitY}px`));
-    }
+    // 4. Ripple Aura & Orbit System: Locked in unison with the Avatar Stage
+    // Trajectory orbit dan ripple aura bergerak serentak dengan avatarStage (--parallax-stage-y)
+    // sehingga trajektori elips orbit tidak bergeser dari tubuh karakter saat di-scroll.
 
     // 6. Lightning Ornaments (outward flare into the cosmos as scroll increases)
     if (this.lightningLeft) {
