@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a2012" />
+      <stop offset="50%" stop-color="#8c3d1e" />
+      <stop offset="100%" stop-color="#d97443" />
+    </linearGradient>
+    <linearGradient id="riverGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f2b33" />
+      <stop offset="50%" stop-color="#1b4d58" />
+      <stop offset="100%" stop-color="#2c6975" />
+    </linearGradient>
+    <linearGradient id="rockSun" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d66835" />
+      <stop offset="50%" stop-color="#a8431e" />
+      <stop offset="100%" stop-color="#642210" />
+    </linearGradient>
+    <linearGradient id="rockShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#732b18" />
+      <stop offset="50%" stop-color="#48170c" />
+      <stop offset="100%" stop-color="#240a05" />
+    </linearGradient>
+    <linearGradient id="highlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4a261" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#e76f51" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky & Deep Atmosphere -->
+  <rect width="1920" height="360" fill="url(#skyGrad)" />
+
+  <!-- Distant Mesa Cliffs -->
+  <path d="M0,180 L220,160 L450,190 L750,150 L980,180 L1200,140 L1550,175 L1920,155 L1920,360 L0,360 Z" fill="#6a2514" opacity="0.85" />
+  <path d="M150,170 L350,155 L600,180 L880,145 L1100,165 L1400,135 L1750,160 L1920,140 L1920,360 L150,360 Z" fill="#521b0e" opacity="0.9" />
+
+  <!-- Winding Canyon River in Deep Gorge -->
+  <path d="M420,240 Q700,280 960,260 T1450,270 Q1680,290 1920,265 L1920,330 L400,330 Z" fill="url(#riverGrad)" />
+  <path d="M460,248 Q720,285 960,265 T1420,275 Q1640,292 1920,272" stroke="#48cae4" stroke-width="4" fill="none" opacity="0.6" />
+
+  <!-- Canyon Left Massive Ridge (Midground) -->
+  <polygon points="0,60 280,120 480,240 380,360 0,360" fill="url(#rockSun)" />
+  <polygon points="0,80 180,130 340,260 220,360 0,360" fill="url(#rockShadow)" />
+  <!-- Striations / Geological Layer Lines Left -->
+  <path d="M0,95 Q140,135 280,160" stroke="#f4a261" stroke-width="3" fill="none" opacity="0.7" />
+  <path d="M0,130 Q160,170 320,200" stroke="#240a05" stroke-width="4" fill="none" opacity="0.8" />
+  <path d="M0,165 Q180,210 360,240" stroke="#f4a261" stroke-width="2.5" fill="none" opacity="0.6" />
+  <path d="M0,210 Q200,250 420,280" stroke="#240a05" stroke-width="5" fill="none" opacity="0.9" />
+  <path d="M0,260 Q180,290 380,320" stroke="#e76f51" stroke-width="3" fill="none" opacity="0.5" />
+
+  <!-- Canyon Right Massive Ridge (Midground) -->
+  <polygon points="1920,40 1620,110 1420,230 1520,360 1920,360" fill="url(#rockSun)" />
+  <polygon points="1920,70 1720,130 1540,250 1680,360 1920,360" fill="url(#rockShadow)" />
+  <!-- Striations Right -->
+  <path d="M1920,80 Q1780,125 1620,150" stroke="#f4a261" stroke-width="3" fill="none" opacity="0.7" />
+  <path d="M1920,120 Q1740,160 1540,195" stroke="#240a05" stroke-width="4" fill="none" opacity="0.8" />
+  <path d="M1920,170 Q1700,210 1480,245" stroke="#f4a261" stroke-width="2.5" fill="none" opacity="0.6" />
+  <path d="M1920,220 Q1680,260 1440,290" stroke="#240a05" stroke-width="5" fill="none" opacity="0.9" />
+
+  <!-- Center Floating Mesa Pillars / Rock Hoodoos -->
+  <polygon points="780,180 840,170 860,290 770,295" fill="#8c381c" />
+  <polygon points="800,177 840,170 850,292 810,294" fill="#5a1e0d" />
+  <polygon points="1080,165 1150,155 1170,280 1070,285" fill="#9e4222" />
+  <polygon points="1100,162 1150,155 1160,282 1120,284" fill="#61210e" />
+
+  <!-- Foreground Left Crags -->
+  <polygon points="0,0 220,40 380,180 180,360 0,360" fill="#4d1609" />
+  <polygon points="0,20 160,60 280,200 120,360 0,360" fill="#290a04" />
+  <!-- Detailed Hatching Lines on Foreground -->
+  <path d="M20,10 L60,80 M40,15 L90,110 M70,25 L130,140 M110,40 L180,180 M150,60 L230,220 M190,85 L280,260" stroke="#d66835" stroke-width="2" opacity="0.7" />
+
+  <!-- Foreground Right Crags -->
+  <polygon points="1920,0 1680,30 1520,190 1740,360 1920,360" fill="#4d1609" />
+  <polygon points="1920,20 1740,50 1610,210 1800,360 1920,360" fill="#290a04" />
+  <!-- Detailed Hatching Lines Right -->
+  <path d="M1900,10 L1860,80 M1880,15 L1830,110 M1850,25 L1790,140 M1810,40 L1740,180 M1770,60 L1690,220 M1730,85 L1640,260" stroke="#d66835" stroke-width="2" opacity="0.7" />
+
+  <!-- Atmospheric Dust & Sunlight Beam -->
+  <polygon points="300,0 700,0 1200,360 600,360" fill="url(#highlight)" />
+
+  <!-- Dark Top Vignette for Contrast & Text Readability -->
+  <rect width="1920" height="120" fill="black" opacity="0.35" />
+</svg>
