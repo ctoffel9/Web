@@ -11,8 +11,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet" />
 
-  <script type="module" crossorigin src="/assets/index-B39NjUQ9.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-B5Bej4Zr.css">
+  <!-- Import Map for bare modules when served as raw static files -->
+
+
+  <script type="importmap">
+    {
+      "imports": {
+        "page-flip": "https://cdn.jsdelivr.net/npm/page-flip@2.0.7/+esm",
+        "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.15.0/+esm",
+        "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/+esm"
+      }
+    }
+  </script>
+  <script type="module" crossorigin src="./assets/index-Bb1uJjC0.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BjzOZLhj.css">
 </head>
 <body class="clean-white-layout">
   <!-- UI Main Wrapper -->
@@ -141,11 +153,11 @@
 
           <!-- Left Lightning Ornament (Green with Pink Drop Shadow) -->
           <div class="lightning-ornament lightning-left" id="lightning-left" aria-hidden="true">
-            <img src="/images/lightning-left.png" alt="" class="lightning-img" draggable="false" />
+            <img src="./assets/lightning-left-s2A94xPc.png" alt="" class="lightning-img" draggable="false" />
           </div>
 
           <img 
-            src="/images/christoffel-avatar.png" 
+            src="./assets/christoffel-avatar-BNoII2GH.png" 
             alt="Christoffel - Illustrator &amp; Game Developer" 
             class="avatar-character-img"
             id="avatar-hero-img"
@@ -154,7 +166,7 @@
 
           <!-- Right Lightning Ornament (Green with Pink Drop Shadow) -->
           <div class="lightning-ornament lightning-right" id="lightning-right" aria-hidden="true">
-            <img src="/images/lightning-right.png" alt="" class="lightning-img" draggable="false" />
+            <img src="./assets/lightning-right-DYaCSuIy.png" alt="" class="lightning-img" draggable="false" />
           </div>
 
           <!-- ILLUS Starburst Button (Lower Right -> Flipbook Fullscreen) -->

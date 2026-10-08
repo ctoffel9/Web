@@ -179,7 +179,7 @@ body.modal-open {
   opacity: var(--parallax-halftone-opacity, 0.5);
   will-change: transform, opacity;
   /* Halftone Bleed SVG - Electric Purple */
-  background-image: url('/images/halftone-bleed.svg');
+  background-image: url('./assets/halftone-bleed.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

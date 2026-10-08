@@ -5,9 +5,9 @@ export class FlipbookViewer {
     this.containerId = options.containerId || 'flipbook-container';
     this.stageId = options.stageId || 'flipbook-stage';
     this.totalPages = options.totalPages || 36;
-    this.imagePathPrefix = options.imagePathPrefix || '/booklet/page-';
+    this.imagePathPrefix = options.imagePathPrefix || './booklet/page-';
     this.imagePathSuffix = options.imagePathSuffix || '.jpg';
-    this.pdfUrl = options.pdfUrl || '/portfolio-booklet.pdf';
+    this.pdfUrl = options.pdfUrl || './portfolio-booklet.pdf';
     this.gdriveUrl = options.gdriveUrl || 'https://drive.google.com/file/d/1_IcNi_hYaTUt0jeGm1EPHhMi_WOhiaVU/view?usp=sharing';
 
     this.pageFlip = null;

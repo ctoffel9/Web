@@ -60,9 +60,9 @@ class App {
       stageId: 'flipbook-stage',
       totalPages: 36,
       startPage: 3, // Halaman 4 (0-indexed: index 3)
-      imagePathPrefix: '/booklet/page-',
+      imagePathPrefix: './booklet/page-',
       imagePathSuffix: '.jpg',
-      pdfUrl: '/portfolio-booklet.pdf',
+      pdfUrl: './portfolio-booklet.pdf',
       gdriveUrl: 'https://drive.google.com/file/d/1_IcNi_hYaTUt0jeGm1EPHhMi_WOhiaVU/view?usp=sharing'
     });
 

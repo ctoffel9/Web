@@ -45,28 +45,28 @@ export class OrbitSystem {
       {
         id: 'art-warmth',
         title: 'Warmth & Whistles',
-        image: '/images/warmth.png',
+        image: './images/warmth.png',
         tag: 'Cozy Tea Sim',
         itchUrl: 'https://summerland-games.itch.io/warmth-and-whistles'
       },
       {
         id: 'art-alchefmist',
         title: 'Alchefmist',
-        image: '/images/alchefmist.png',
+        image: './images/alchefmist.png',
         tag: 'Alchemy Deckbuilder',
         itchUrl: 'https://christoffel.itch.io/alchefmist'
       },
       {
         id: 'art-doomscroll',
         title: 'Doom Scrolling',
-        image: '/images/doom-scroll.png',
+        image: './images/doom-scroll.png',
         tag: 'Satirical Roguelike',
         itchUrl: 'https://summerland-games.itch.io/doom-scroll'
       },
       {
         id: 'art-nightride',
         title: 'Night Ride',
-        image: '/images/night-ride.png',
+        image: './images/night-ride.png',
         tag: 'Visual Journey',
         itchUrl: 'https://christoffel.itch.io/night-ride'
       }
