@@ -2,6 +2,7 @@ import { UIManager } from './ui/UIManager.js';
 import { FlipbookViewer } from './components/FlipbookViewer.js';
 import { RippleAura } from './components/RippleAura.js';
 import { OrbitSystem } from './components/OrbitSystem.js';
+import { BestWorkCarousel } from './components/BestWorkCarousel.js';
 import { ParallaxController } from './components/ParallaxController.js';
 import { personalInfo, heroCategories, artworks } from './data/portfolioData.js';
 
@@ -41,7 +42,18 @@ class App {
       }
     });
 
-    // 3. Bind navigasi Games ke modal galeri games
+    // 4. Inisialisasi Carousel Best Work (Inner Sight Games — Luxman, ADMNOR, Voodoo Craft)
+    this.bestWorkCarousel = new BestWorkCarousel({
+      containerId: 'best-work-carousel',
+      onInspect: (artId) => {
+        const matched = artworks.find(a => a.id === artId);
+        if (matched) {
+          this.uiManager.showArtworkDetail(matched);
+        }
+      }
+    });
+
+    // 5. Bind navigasi Games ke modal galeri games
     const navGamesBtn = document.getElementById('nav-games-btn');
     if (navGamesBtn) {
       navGamesBtn.addEventListener('click', (e) => {
@@ -54,7 +66,7 @@ class App {
       });
     }
 
-    // 4. Inisialisasi Flipbook Viewport (Membuka Halaman 4 saat awal)
+    // 6. Inisialisasi Flipbook Viewport (Membuka Halaman 4 saat awal)
     this.flipbookViewer = new FlipbookViewer({
       containerId: 'flipbook-container',
       stageId: 'flipbook-stage',

@@ -292,3 +292,79 @@ export const artworks = [
   }
 ];
 
+// ==========================================================================
+// BEST WORK / FEATURED GAMES (INNER SIGHT GAMES — STEAM RELEASES)
+// ==========================================================================
+export const bestWorkGames = [
+  {
+    id: "art-luxman",
+    title: "Luxman Moonlit Market",
+    tagline: "Roguelike Strategy & Spatial Deckbuilding",
+    badge: "STEAM DEMO LIVE",
+    category: "commercial",
+    label: "2025–2026 • INNER SIGHT GAMES",
+    year: "2025–2026",
+    client: "Inner Sight Games",
+    role: "Key Art, 2D Game Assets, Character & Environment Illustration",
+    tools: ["Photoshop", "Digital Illustration", "Tile Placement", "Steam Key Art"],
+    accentColor: "#d4ff00",
+    theme: "luxman",
+    image: "./images/luxman-moonlit-market.png",
+    itchUrl: "https://store.steampowered.com/app/3642440",
+    steamUrl: "https://store.steampowered.com/app/3642440",
+    websiteUrl: "https://innersightgames.com/luxman-moonlit-market",
+    playMode: "Available on Steam (PC)",
+    shortDesc: "A roguelike strategy game combining tricky deckbuilding with spatial tile-placement mechanics. Follow Luxman through Pantura and magical Arcapelago.",
+    description: "A roguelike strategy game combining tricky deckbuilding with mind-bending spatial tile-placement mechanics. You take the role of Luxman, a true showman at heart as he takes his night market through beautiful Pantura, magical Arcapelago, and even beyond...",
+    aspect: { width: 1232, height: 706 }
+  },
+  {
+    id: "art-admnor",
+    title: "ADMNOR",
+    tagline: "Psychological & Rage-Inducing Puzzle Game",
+    badge: "DEMO OUT NOW",
+    category: "commercial",
+    label: "2025–2026 • INNER SIGHT GAMES",
+    year: "2025–2026",
+    client: "Inner Sight Games",
+    role: "Key Art, Visual Development & 2D Illustration",
+    tools: ["Photoshop", "Concept Art", "Digital Illustration", "Puzzle Layout"],
+    accentColor: "#ec1c8b",
+    theme: "admnor",
+    image: "./images/admnor.png",
+    itchUrl: "https://store.steampowered.com/app/3935690",
+    steamUrl: "https://store.steampowered.com/app/3935690",
+    websiteUrl: "https://innersightgames.com/admnor",
+    playMode: "Demo Available on Steam (PC)",
+    shortDesc: "A rage-inducing puzzle game which will test the limits of wit and patience. Take on the challenge of sorting and freeing trapped souls in the process.",
+    description: "A rage-inducing puzzle game which will test the limits of not only your wit, but also your patience. Take on the challenge of sorting... whatever it is that needs sorting and possibly freeing a trapped soul in the process.",
+    aspect: { width: 1232, height: 706 }
+  },
+  {
+    id: "art-voodoo",
+    title: "Voodoo Craft",
+    tagline: "Cozy Witchcraft Shop Simulator in Graveberg",
+    badge: "WISHLIST ON STEAM",
+    category: "commercial",
+    label: "2025–2026 • INNER SIGHT GAMES",
+    year: "2025–2026",
+    client: "Inner Sight Games",
+    role: "Key Art, Character & Prop Design, Witchcraft Shop Assets",
+    tools: ["Photoshop", "Digital Illustration", "Character Design", "Prop Art"],
+    accentColor: "#a3e635",
+    theme: "voodoo",
+    image: "./images/voodoo-craft.png",
+    itchUrl: "https://store.steampowered.com/app/4645210",
+    steamUrl: "https://store.steampowered.com/app/4645210",
+    websiteUrl: "https://innersightgames.com/voodoo-craft",
+    playMode: "Coming Soon on Steam (PC)",
+    shortDesc: "Run a cozy witchcraft shop in the village of Graveberg, mixing ingredients, crafting curse dolls, and performing hexes where every curse tells its story.",
+    description: "Run a cozy witchcraft shop in the strange village of Graveberg, mixing ingredients, crafting curse dolls, and performing hexes that twist fates and entangle villagers’ relationships, where every curse tells its story.",
+    aspect: { width: 1920, height: 1080 }
+  }
+];
+
+// Append bestWorkGames into general artworks array
+artworks.push(...bestWorkGames);
+
+

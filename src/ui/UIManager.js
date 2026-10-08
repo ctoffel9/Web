@@ -120,11 +120,20 @@ export class UIManager {
       actionsContainer.innerHTML = '';
       if (art.itchUrl) {
         const isInsta = art.itchUrl.includes('instagram.com');
-        const btnText = isInsta ? 'VIEW ON INSTAGRAM (@chrst.fl) ↗' : 'PLAY / VIEW ON ITCH.IO ↗';
+        const isSteam = art.itchUrl.includes('steampowered.com');
+        let btnText = 'PLAY / VIEW ON ITCH.IO ↗';
+        if (isInsta) btnText = 'VIEW ON INSTAGRAM (@chrst.fl) ↗';
+        else if (isSteam) btnText = 'VIEW ON STEAM STORE ↗';
+
         actionsContainer.innerHTML = `
           <a href="${art.itchUrl}" target="_blank" rel="noopener" class="action-play-btn">
             ${btnText}
           </a>
+          ${art.websiteUrl ? `
+            <a href="${art.websiteUrl}" target="_blank" rel="noopener" class="action-play-btn" style="background:rgba(124, 58, 237, 0.25); border: 1.5px solid #7c3aed; color:#ffffff;">
+              OFFICIAL WEBSITE ↗
+            </a>
+          ` : ''}
           ${art.playMode ? `<span class="play-badge">${art.playMode}</span>` : ''}
         `;
       }
